@@ -11,23 +11,34 @@
       font-family: system-ui;
     }
 
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
     .initial-loading {
-      height: 90vh;
-      width: 100%;
+      height: 100vh;
+      width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: lighter;
-      font-size: 16px;
+      font-size: 24px;
+    }
+
+    @media(prefers-color-scheme:dark) {
+      .initial-loading {
+        background-color: #1c2127;
+        color: #fff;
+      }
     }
   </style>
-  <script type="module" crossorigin src="/dp/assets/index-b1210222.js"></script>
-  <link rel="stylesheet" href="/dp/assets/index-35766d94.css">
+  <script type="module" crossorigin src="/dp/assets/index-5e974e3b.js"></script>
+  <link rel="stylesheet" href="/dp/assets/index-29da0883.css">
 </head>
 
 <body>
   <div id="root">
-    <div class="initial-loading">Loading DataPrep</div>
+    <div class="initial-loading">Loading...</div>
   </div>
   
 </body>
