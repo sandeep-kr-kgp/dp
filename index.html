@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="DataPrep - A simple tool to prepare and transform your data."
+        />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DataPrep</title>
-  <style>
-    html {
-      font-family: system-ui;
-    }
+        <title>DataPrep</title>
+        <style>
+            html {
+                font-family: system-ui;
+            }
 
-    * {
-      padding: 0;
-      margin: 0;
-    }
+            * {
+                padding: 0;
+                margin: 0;
+            }
 
-    .initial-loading {
-      height: 100vh;
-      width: 100vw;
-      padding-top: 40vh;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 1.25rem;
-    }
-  </style>
-  <script type="module" crossorigin src="/assets/index-fbd9a36d.js"></script>
-  <link rel="stylesheet" href="/assets/index-d22f65c8.css">
-</head>
+            .lmsg {
+                margin-top: 42vh;
+                text-align: center;
+                font-family: monospace;
+                font-size: 1rem;
+            }
+            .lmsg span {
+                font-weight: 500;
+            }
+        </style>
+      <script type="module" crossorigin src="/assets/index-5945bd16.js"></script>
+      <link rel="stylesheet" href="/assets/index-d22f65c8.css">
+    </head>
 
-<body>
-  <div id="root">
-    <div class="initial-loading">DataPrep...</div>
-  </div>
-  
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "b140e56a980b4a509d56d5dc0697b676"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
-
+    <body>
+        <div id="root">
+            <div class="lmsg" role="status" aria-live="polite">Loading <span>DataPrep</span></div>
+        </div>
+        
+        <!-- Cloudflare Web Analytics -->
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "b140e56a980b4a509d56d5dc0697b676"}'
+        ></script>
+        <!-- End Cloudflare Web Analytics -->
+    </body>
 </html>
